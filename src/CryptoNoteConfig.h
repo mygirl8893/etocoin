@@ -111,14 +111,14 @@ const uint8_t CURRENT_FORK_INDEX = 3;
 
 /* Block heights we are going to have hard forks at */
 const uint64_t FORK_HEIGHTS[] = {
-    187000,
-    350000,
+    2000
+    /*350000,
     440000,
     620000,
     800000,
     1000000,
     1200000,
-    1400000
+    1400000*/
 };
 
 /* Make sure CURRENT_FORK_INDEX is a valid index */
