@@ -107,18 +107,18 @@ static_assert(UPGRADE_VOTING_WINDOW > 1, "Bad UPGRADE_VOTING_WINDOW");
 /* The index in the FORK_HEIGHTS array that this version of the software will
    support. For example, if CURRENT_FORK_INDEX is 3, this version of the
    software will support the fork at 600,000 blocks. */
-const uint8_t CURRENT_FORK_INDEX = 3;
+const uint8_t CURRENT_FORK_INDEX = 0;
 
 /* Block heights we are going to have hard forks at */
 const uint64_t FORK_HEIGHTS[] = {
-    2000
-    /*350000,
+    187000,
+    350000,
     440000,
     620000,
     800000,
     1000000,
     1200000,
-    1400000*/
+    1400000
 };
 
 /* Make sure CURRENT_FORK_INDEX is a valid index */
@@ -166,9 +166,9 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "";
 
 const char* const SEED_NODES[] = {
-  ":11897", //rock
+  "123.123.23.54:11897", //rock
   //"145.239.88.119:11999", //cision
   //"142.44.242.106:11897", //tom
-  ":11897" //iburnmycd
+  "127.0.0.1:11897" //iburnmycd
 };
 } // CryptoNote
