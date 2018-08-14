@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/mygirl8893/ttlcoin.svg?branch=master)](https://travis-ci.org/mygirl8893/ttlcoin)
-[![Build status](https://ci.appveyor.com/api/projects/status/an6je6l48eawteyg?svg=true)](https://ci.appveyor.com/project/mygirl8893/ttlcoin)
+[![Build Status](https://travis-ci.org/mygirl8893/etocoin.svg?branch=master)](https://travis-ci.org/mygirl8893/etocoin)
+[![Build status](https://ci.appveyor.com/api/projects/status/an6je6l48eawteyg?svg=true)](https://ci.appveyor.com/project/mygirl8893/etocoin)
 ### How To Compile
 
 #### Ubuntu 16.04+ and MacOS 10.10+
