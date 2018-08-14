@@ -378,9 +378,9 @@ pool_wallet::pool_wallet(System::Dispatcher& dispatcher, const CryptoNote::Curre
   m_refresh_progress_reporter(*this),
   m_initResultPromise(nullptr),
   m_walletSynchronized(false) {
-  //m_consoleHandler.setHandler("start_mining", boost::bind(&pool_wallet::start_mining, this, _1), "start_mining [<number_of_threads>] - Start mining in daemon");
-  //m_consoleHandler.setHandler("stop_mining", boost::bind(&pool_wallet::stop_mining, this, _1), "Stop mining in daemon");
-  //m_consoleHandler.setHandler("refresh", boost::bind(&pool_wallet::refresh, this, _1), "Resynchronize transactions and balance");
+  m_consoleHandler.setHandler("start_mining", boost::bind(&pool_wallet::start_mining, this, _1), "start_mining [<number_of_threads>] - Start mining in daemon");
+  m_consoleHandler.setHandler("stop_mining", boost::bind(&pool_wallet::stop_mining, this, _1), "Stop mining in daemon");
+  m_consoleHandler.setHandler("refresh", boost::bind(&pool_wallet::refresh, this, _1), "Resynchronize transactions and balance");
   m_consoleHandler.setHandler("export_keys", boost::bind(&pool_wallet::export_keys, this, _1), "Show the secret keys of the opened wallet");
   m_consoleHandler.setHandler("balance", boost::bind(&pool_wallet::show_balance, this, _1), "Show current wallet balance");
   m_consoleHandler.setHandler("incoming_transfers", boost::bind(&pool_wallet::show_incoming_transfers, this, _1), "Show incoming transfers");
