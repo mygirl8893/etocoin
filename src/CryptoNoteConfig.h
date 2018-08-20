@@ -38,9 +38,11 @@ const uint64_t DIFFICULTY_WINDOW_V3                          = 60;
 const uint64_t DIFFICULTY_BLOCKS_COUNT_V3                    = DIFFICULTY_WINDOW_V3 + 1;
 
 const unsigned EMISSION_SPEED_FACTOR                         = 20;
-const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(0);
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
+/* Premine amount */
+const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(0);
+   
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 100000; //size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2  = 20000;
@@ -166,9 +168,7 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "";
 
 const char* const SEED_NODES[] = {
-  "123.123.23.54:11897", //rock
-  //"145.239.88.119:11999", //cision
-  //"142.44.242.106:11897", //tom
-  "127.0.0.1:11897" //iburnmycd
+  "123.123.23.54:11897",
+  "127.0.0.1:11897"
 };
 } // CryptoNote
